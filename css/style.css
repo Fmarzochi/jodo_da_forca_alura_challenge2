@@ -1,0 +1,177 @@
+/* Estilo reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    border: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilo main */
+.main{
+    background-color:  #E5E5E5;
+    width: 100%;
+    height: auto;
+}
+.footer{
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    background-color: #E5E5E5;
+    margin-top: -2%;
+    font-size: 16px;
+}
+
+/* Header */
+.logo-header{
+    position: relative;
+}
+.logo-header img{
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+
+/* Estilo Seção Botões */
+.secao-butoes{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.secao-butoes input[type="button"]{
+    width: 300px;
+    padding: 33px 0px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#comecar-jogo, #salvar-palavra, #novo-jogo{
+    border: 1px solid #0A3871;
+    background-color: #0A3871;
+    color: #fff;
+    margin-bottom: 24px;
+}
+#add-palavra, #cancelar, #desistir{
+    border: 1px solid #0A3871;
+    background-color: #E5E5E5;
+    color: #0A3871;
+}
+#comecar-jogo:active,  #salvar-palavra:active, #novo-jogo:active{
+    border: 1px solid #0A3871;
+    background-color: #E5E5E5;
+    color: #0A3871;
+}
+#add-palavra:active, #cancelar:active, #desistir:active{
+    border: 1px solid #0A3871;
+    background-color: #0A3871;
+    color: #fff;
+}
+/* Estilo Seção Add Palavra  */
+.secao-add-palavra{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#input-add{
+    width: 600px;
+    padding: 5px 0px;
+    background-color: #E5E5E5;
+    color: #0A3871;
+    font-size: 28px;
+}
+#input-add::placeholder{
+    color: #0A3871;
+    font-size: 28px;
+}
+
+.secao-add-palavra div p{
+    color: #495057;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.secao-add-palavra div i{
+    color: #495057;
+    font-size: 16px;
+}
+
+.secao-add-palavra div input[type="button"]{
+    width: 300px;
+    padding: 15px 0px;
+    border-radius: 20px;
+    text-align: center;
+}
+#msg-palavra{
+    font-weight: 600;
+}
+
+/* Estilo Seção Jogar  */
+.secao-jogar{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+canvas{
+    margin-bottom: 20px;
+}
+#mensagem{
+    position: absolute;
+    right: -50px;
+    top: 300px;
+    z-index: 99;
+    font-weight: 600;
+}
+
+.palavra-forca pre{
+    font-size: 45px;
+    color: #0A3871;
+    text-align: center;
+}
+.palavra-forca #letras{
+    text-align: center;
+    margin-left: -3px;
+}
+.palavra-forca #tracos{
+    margin-top: -64px;
+    font-size: 61px;
+}
+.letras-erradas{
+    text-align: center;
+    color: #495057;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+.secao-jogar div input[type="button"]{
+    width: 250px;
+    padding: 15px 0px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Estilos auxiliares no JavaScript */
+.ocultar{
+    transition: all 1s;
+    display: none;
+}
+.perdeu{
+    color: red;
+}
+.ganhou{
+    color: green;
+}
+.normal{
+    color: black;
+}

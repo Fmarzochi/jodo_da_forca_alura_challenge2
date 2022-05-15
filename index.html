@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge 2 - Jogo da Forca</title>
+    <meta name="author" content="Felipe Marzochi">
+    <meta name="keywords" content="Alura, Challenge 2, Javascript, Técnologia, Oracle">
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="main">
+        <header class="logo-header">
+            <img src="./img/vector.png" alt="Logo da alura">
+            <h1 style="font-size: 0px;">Jogo da Forca</h1>
+        </header>
+
+
+      <article class="secao-butoes">
+        <input type="button" value="Começar a jogar" id="comecar-jogo">
+        <input type="button" value="Adicionar nova palavra" id="add-palavra">
+      </article>
+
+      <article class="secao-jogar ocultar">
+        <section>
+            <div width="500" height="500" style="position: relative;">
+                <canvas width="500" height="500">
+                </canvas>
+                <p id="mensagem" class="ocultar"></p>
+            </div>
+
+            <div>
+                <div class="palavra-forca">
+                    <pre><p id="letras"></p></pre>
+                    <pre><p id="tracos"></p></pre>
+                </div>
+
+                <div class="letras-erradas">
+                    <pre id="letras-errada"></pre>
+                </div>
+            </div>
+
+            <div class="botoes-jogo">
+                <input type="button" value="Novo jogo" id="novo-jogo">
+                <input type="button" value="Desistir" id="desistir">
+            </div>
+        </section>
+      </article>
+
+
+      
+      <article class="secao-add-palavra ocultar">
+        <input type="text" id="input-add" placeholder="Digite uma palavra ou frase">
+       
+
+        <section>
+            <div>
+                <p><i class="fas fa-info-circle"></i> Máx. de 8 letras</p>
+            </div>
+
+            <div>
+                <input type="button" value="Salvar e começar" id="salvar-palavra">
+                <input type="button" value="Cancelar" id="cancelar">
+            </div>
+            <p id="msg-palavra" class="perdeu ocultar"></p>
+        </section>
+ 
+  </article>
+
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/eventos.js"></script>
+    <script src="./js/funcoes-boneco.js"></script>
+    <script src="./js/funcoes-string.js"></script>
+    <script src="./js/funcoes-utilitarias.js"></script>
+</div>
+
+    <footer class="footer"> 
+     <p>&#169; 2022 <a href="https://www.linkedin.com/in/felipemarzochi/"  rel="noreferrer noopener" target="_blank">Felipe Marzochi</a></p>
+        </footer>
+      </body>
+</html>
